@@ -16,6 +16,12 @@ dialog{border:1px solid var(--line);background:var(--paper);color:var(--ink);wid
 
 .collection{margin:82px auto 0;padding-top:44px;border-top:1px solid var(--line)}.collection h2{font-size:clamp(23px,4vw,30px);font-weight:400;line-height:1.6;margin:0 0 12px}.collection-hint{font-size:14px;line-height:1.8;color:var(--muted);margin:0 0 34px}.gift-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px 22px}.gift-card{position:relative;display:flex;flex-direction:column;align-items:stretch;text-align:left;border:0;background:transparent;padding:0}.gift-art{position:relative;display:grid;place-items:center;aspect-ratio:1.12;background:var(--gift-bg,#eeede4);overflow:hidden}.gift-art svg{width:76%;height:76%;transition:transform .3s}.gift-card:hover .gift-art svg{transform:translateY(-4px) rotate(-2deg)}.gift-number{position:absolute;left:14px;top:12px;font:11px system-ui,sans-serif;letter-spacing:.12em;color:#6d7467}.gift-plus{position:absolute;right:12px;bottom:10px;color:var(--olive);font-size:23px}.gift-name{display:block;font-size:16px;line-height:1.6;padding:14px 0 4px}.gift-origin{display:block;font:10px/1.7 system-ui,sans-serif;letter-spacing:.08em;color:var(--muted)}.gift-card:last-child{grid-column:2}.gift-modal{padding:48px 30px 30px;max-height:calc(100dvh - 32px);overflow-y:auto}.gift-modal-art{height:160px;display:grid;place-items:center;margin:0 0 20px;background:var(--gift-bg)}.gift-modal-art svg{width:150px;height:145px}.gift-modal h2{font-size:25px;margin-bottom:8px}.gift-modal .gift-detail-origin{font:11px/1.8 system-ui,sans-serif;letter-spacing:.08em;color:var(--olive);margin:0 0 22px}.gift-modal .gift-detail-text{font-size:16px;line-height:1.9;margin:0}.gift-modal .gift-detail-note{margin:20px 0 0;padding-top:18px;border-top:1px solid var(--line);font-size:14px;line-height:1.8;color:var(--olive)}.gift-art img,.gift-modal-art img{width:100%;height:100%;object-fit:contain}.gift-card:hover .gift-art img{transform:none}
 @media(max-width:640px){.gift-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 16px}.gift-card:last-child{grid-column:1 / -1;width:calc((100% - 16px)/2);justify-self:center}.gift-name{font-size:15px}.gift-origin{font-size:9px}.collection{margin-top:62px;padding-top:34px}.gift-modal{padding:44px 24px 28px}}
+
+/* A small welcome and three drawers: reveal only what Mayu opens. */
+header{max-width:880px;padding:12px 26px}.brand{font-size:12px}.lang button{padding:7px 13px}
+main{max-width:780px;padding:0 26px 22px}.drawing{width:150px;height:60px;margin:0 auto 4px}.eyebrow{font-size:9px;margin:6px 0 12px}h1{font-size:54px;line-height:1.18;margin-bottom:7px}.birthday{font-size:20px;margin-bottom:14px}.rule{margin-bottom:13px;width:28px}.intro{font-size:14px;line-height:1.7}.open{margin-top:12px;padding:10px 20px;font-size:13px;gap:10px}.open svg{width:19px;height:17px}
+.collection{margin:26px auto 0;padding-top:19px}.collection>.eyebrow{display:none}.collection h2{font-size:23px;line-height:1.4;margin-bottom:6px}.collection-hint{font-size:12px;line-height:1.6;margin-bottom:15px}.gift-drawers{display:block;text-align:left}.gift-drawer{border-top:1px solid var(--line)}.gift-drawer:last-child{border-bottom:1px solid var(--line)}.drawer-summary{display:flex;align-items:center;gap:14px;list-style:none;cursor:pointer;padding:11px 8px;min-height:56px}.drawer-summary::-webkit-details-marker{display:none}.drawer-summary:focus-visible{outline:2px solid var(--olive);outline-offset:2px}.drawer-mark{width:33px;height:33px;border-radius:50%;display:grid;place-items:center;background:var(--drawer-color);color:var(--olive);font-size:18px;flex-shrink:0}.drawer-label{flex:1;font-size:17px;line-height:1.45}.drawer-count{font:11px system-ui,sans-serif;color:var(--muted);margin-left:8px}.drawer-toggle{position:relative;width:14px;height:14px;margin:0 6px}.drawer-toggle:before,.drawer-toggle:after{content:"";position:absolute;top:6px;width:13px;height:1px;background:var(--olive);transition:transform .2s}.drawer-toggle:after{transform:rotate(90deg)}.gift-drawer[open] .drawer-toggle:after{transform:rotate(0)}.gift-drawer[open] .drawer-summary{padding-bottom:12px}.drawer-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;padding:2px 8px 20px}.drawer-grid .gift-card:last-child{grid-column:auto;width:auto;justify-self:stretch}.drawer-grid .gift-art{aspect-ratio:1.6}.drawer-grid .gift-art svg{width:72%;height:90%}.drawer-grid .gift-name{font-size:14px;line-height:1.5;padding:9px 0 0}.drawer-grid .gift-origin{display:none}.drawer-grid .gift-number{font-size:10px;left:10px;top:9px}.drawer-grid .gift-plus{font-size:20px;right:9px;bottom:5px}.drawer-grid.single{grid-template-columns:minmax(0,220px);justify-content:center}.foot{margin:16px 0 0;font-size:10px}.foot span{margin-top:6px;font-size:9px}
+@media(max-width:480px){header{padding:12px 18px}main{padding:0 18px 18px}.drawing{height:58px;width:120px}h1{font-size:49px}.birthday{font-size:18px;margin-bottom:12px}.intro{font-size:13px}.eyebrow{font-size:8px;letter-spacing:.22em;margin:4px 0 10px}.collection{margin-top:22px;padding-top:17px}.collection h2{font-size:21px}.collection-hint{font-size:11px}.drawer-summary{padding:13px 3px;gap:10px;min-height:62px}.drawer-label{font-size:16px}.drawer-grid{gap:11px;padding:0 3px 17px}.drawer-grid .gift-art{aspect-ratio:1.05}.drawer-grid .gift-name{font-size:12px;line-height:1.5}.drawer-grid .gift-number{font-size:8px;left:6px;top:5px}.drawer-grid .gift-plus{font-size:17px;right:5px}.drawer-grid.single{grid-template-columns:minmax(0,150px)}.foot{margin-top:19px}}
 </style>
 </head>
 <body>
@@ -37,9 +43,9 @@ dialog{border:1px solid var(--line);background:var(--paper);color:var(--ink);wid
 <button class="open" id="open" type="button"><svg viewBox="0 0 24 20" fill="none" aria-hidden="true"><rect x="1" y="2" width="22" height="16" rx="1" stroke="currentColor"/><path d="m2 3 10 8L22 3" stroke="currentColor"/></svg><span data-i18n="open">メッセージを開く</span></button>
 <section class="collection" id="gifts" aria-labelledby="gifts-title">
 <p class="eyebrow" id="collection-kicker">小包の中に</p>
-<h2 id="gifts-title">プロヴァンスからの、七つの贈りもの</h2>
-<p class="collection-hint" id="collection-hint">気になる贈りものにふれて、ひとつずつ開いてみてね。</p>
-<div class="gift-grid" id="gift-grid"></div>
+<h2 id="gifts-title">小さな引き出しを開けてみて</h2>
+<p class="collection-hint" id="collection-hint">三つの引き出しに、七つの贈りもの。</p>
+<div class="gift-drawers" id="gift-grid"></div>
 </section>
 <p class="foot">Provence · Japon<span data-i18n="footer">心をこめて</span></p>
 </main>
@@ -83,15 +89,33 @@ function fillGift(gift){
 function renderGifts(){
  const lang=document.documentElement.lang;
  document.getElementById('collection-kicker').textContent=lang==='fr'?'Dans le colis':'小包の中に';
- document.getElementById('gifts-title').textContent=lang==='fr'?'Sept petites choses de Provence':'プロヴァンスからの、七つの贈りもの';
- document.getElementById('collection-hint').textContent=lang==='fr'?'Touche un objet pour le découvrir.':'気になる贈りものにふれて、ひとつずつ開いてみてね。';
+ document.getElementById('gifts-title').textContent=lang==='fr'?'Ouvre un petit tiroir…':'小さな引き出しを開けてみて';
+ document.getElementById('collection-hint').textContent=lang==='fr'?'Trois tiroirs, sept petites attentions.':'三つの引き出しに、七つの贈りもの。';
  document.getElementById('gift-close').setAttribute('aria-label',copy[lang].close);
- const grid=document.getElementById('gift-grid');grid.replaceChildren();
- gifts.forEach((gift,index)=>{
+ const grid=document.getElementById('gift-grid');
+ const openDrawer=grid.querySelector('details[open]')?.dataset.drawer;
+ grid.replaceChildren();
+ const drawers=[
+  {id:'taste',fr:'À savourer',ja:'甘いひととき',mark:'◒',color:'#eee5ce',ids:['maures','nougat','lavender-honey']},
+  {id:'scent',fr:'Parfums de Provence',ja:'プロヴァンスの香り',mark:'✳',color:'#eae4ef',ids:['sachet','soap','bear']},
+  {id:'keep',fr:'Un souvenir à garder',ja:'ずっと大切に',mark:'◇',color:'#e6ece8',ids:['jewelry']}
+ ];
+ drawers.forEach(group=>{
+  const drawer=document.createElement('details');drawer.className='gift-drawer';drawer.name='provence-drawers';drawer.dataset.drawer=group.id;drawer.open=group.id===openDrawer;
+  const summary=document.createElement('summary');summary.className='drawer-summary';summary.style.setProperty('--drawer-color',group.color);
+  summary.innerHTML=`<span class="drawer-mark" aria-hidden="true">${group.mark}</span><span class="drawer-label"></span><span class="drawer-count">${String(group.ids.length).padStart(2,'0')}</span><span class="drawer-toggle" aria-hidden="true"></span>`;
+  summary.querySelector('.drawer-label').textContent=group[lang];
+  const tray=document.createElement('div');tray.className='drawer-grid'+(group.ids.length===1?' single':'');
+  group.ids.forEach(id=>{
+   const index=gifts.findIndex(gift=>gift.id===id);const gift=gifts[index];
   const button=document.createElement('button');button.type='button';button.className='gift-card';button.dataset.gift=gift.id;button.style.setProperty('--gift-bg',gift.bg);button.setAttribute('aria-haspopup','dialog');
   button.innerHTML=`<span class="gift-art"><span class="gift-number">0${index+1}</span>${giftVisual(gift)}<span class="gift-plus" aria-hidden="true">＋</span></span><span class="gift-name"></span><span class="gift-origin"></span>`;
   button.querySelector('.gift-name').textContent=gift[lang][0];button.querySelector('.gift-origin').textContent=gift[lang][1];
-  button.addEventListener('click',()=>{selectedGift=gift;fillGift(gift);giftDialog.showModal();});grid.append(button);
+  button.addEventListener('click',()=>{selectedGift=gift;fillGift(gift);giftDialog.showModal();});tray.append(button);
+  });
+  drawer.append(summary,tray);
+  drawer.addEventListener('toggle',()=>{if(drawer.open)grid.querySelectorAll('details').forEach(other=>{if(other!==drawer)other.open=false;});});
+  grid.append(drawer);
  });
  if(selectedGift)fillGift(selectedGift);
 }
