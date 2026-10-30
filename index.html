@@ -30,17 +30,17 @@ dialog{border:1px solid var(--line);background:var(--paper);color:var(--ink);wid
 <h1>まゆ</h1>
 <h2 class="birthday" data-i18n="birthday">お誕生日おめでとう</h2>
 <div class="rule"></div>
-<p class="intro" data-i18n="intro">プロヴァンスの小さな贈りものを、あなたへ。
-ひとつひとつ、心をこめて選びました。</p>
+<p class="intro" data-i18n="intro">プロヴァンスの小さな贈りものを、あなたへ。</p>
 <button class="open" id="open" type="button"><svg viewBox="0 0 24 20" fill="none" aria-hidden="true"><rect x="1" y="2" width="22" height="16" rx="1" stroke="currentColor"/><path d="m2 3 10 8L22 3" stroke="currentColor"/></svg><span data-i18n="open">メッセージを開く</span></button>
 <p class="foot">Provence · Japon<span data-i18n="footer">心をこめて</span></p>
 </main>
 <dialog id="letter" aria-labelledby="letter-title"><button type="button" class="close" id="close" aria-label="閉じる">×</button><div class="tiny" aria-hidden="true">✳</div><h2 id="letter-title" data-i18n="title">プロヴァンスのひとかけら</h2><p data-i18n="letter">この小包に、プロヴァンスの風を少しだけ。
-日々の暮らしに、小さな喜びを届けられますように。
+いつか、私たちがこの土地をご案内できたら、どんなにうれしいことでしょう…。
 
-すてきなお誕生日になりますように、まゆ。</p></dialog>
+まゆ、すてきなお誕生日になりますように。
+Anne-Marie et Alain 🥰 ❤️</p></dialog>
 <script>
-const copy={ja:{eyebrow:'プロヴァンスから、あなたへ',birthday:'お誕生日おめでとう',intro:'プロヴァンスの小さな贈りものを、あなたへ。\nひとつひとつ、心をこめて選びました。',open:'メッセージを開く',footer:'心をこめて',title:'プロヴァンスのひとかけら',letter:'この小包に、プロヴァンスの風を少しだけ。\n日々の暮らしに、小さな喜びを届けられますように。\n\nすてきなお誕生日になりますように、まゆ。',close:'閉じる'},fr:{eyebrow:'De la Provence à toi',birthday:'Joyeux anniversaire',intro:'Quelques petits morceaux de Provence pour toi.\nChaque cadeau a été choisi avec attention.',open:'Ouvrir le petit mot',footer:'Avec toute mon affection',title:'Un peu de Provence',letter:'Dans ce colis, un peu de l’air de Provence.\nEt l’envie de glisser de petites joies dans ton quotidien.\n\nJe te souhaite un très bel anniversaire, Mayu.',close:'Fermer'}};
+const copy={ja:{eyebrow:'プロヴァンスから、あなたへ',birthday:'お誕生日おめでとう',intro:'プロヴァンスの小さな贈りものを、あなたへ。',open:'メッセージを開く',footer:'心をこめて',title:'プロヴァンスのひとかけら',letter:'この小包に、プロヴァンスの風を少しだけ。\nいつか、私たちがこの土地をご案内できたら、どんなにうれしいことでしょう…。\n\nまゆ、すてきなお誕生日になりますように。\nAnne-Marie et Alain 🥰 ❤️',close:'閉じる'},fr:{eyebrow:'De la Provence à toi',birthday:'Joyeux anniversaire',intro:'Quelques petits morceaux de Provence pour toi.',open:'Ouvrir le petit mot',footer:'Avec toute notre affection',title:'Un peu de Provence',letter:'Dans ce colis, un peu de l’air de Provence.\nQue nous serions heureux de te faire découvrir un jour...\n\nMayu, nous te souhaitons un très bel anniversaire.\nAnne-Marie et Alain 🥰 ❤️',close:'Fermer'}};
 const dialog=document.getElementById('letter');
 document.querySelectorAll('[data-lang]').forEach(button=>button.addEventListener('click',()=>{const lang=button.dataset.lang;document.documentElement.lang=lang;document.querySelectorAll('[data-i18n]').forEach(el=>el.textContent=copy[lang][el.dataset.i18n]);document.querySelectorAll('[data-lang]').forEach(el=>el.setAttribute('aria-pressed',String(el.dataset.lang===lang)));document.getElementById('close').setAttribute('aria-label',copy[lang].close);}));
 document.getElementById('open').addEventListener('click',()=>dialog.showModal());
