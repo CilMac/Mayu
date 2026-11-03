@@ -79,7 +79,6 @@ main:before,main:after{display:none}.brand:before{content:none}
 <section class="collection" id="gifts" aria-labelledby="gifts-title">
 <p class="eyebrow" id="collection-kicker">小包の中に</p>
 <h2 id="gifts-title">小さな引き出しを開けてみて</h2>
-<p class="collection-hint" id="collection-hint">三つの引き出しに、七つの贈りもの。</p>
 <div class="gift-drawers" id="gift-grid"></div>
 </section>
 
@@ -126,7 +125,6 @@ function renderGifts(){
  const lang=document.documentElement.lang;
  document.getElementById('collection-kicker').textContent=lang==='fr'?'Dans le colis':'小包の中に';
  document.getElementById('gifts-title').textContent=lang==='fr'?'Ouvre un petit tiroir…':'小さな引き出しを開けてみて';
- document.getElementById('collection-hint').textContent=lang==='fr'?'Trois tiroirs, sept petites attentions.':'三つの引き出しに、七つの贈りもの。';
  document.getElementById('gift-close').setAttribute('aria-label',copy[lang].close);
  const grid=document.getElementById('gift-grid');
  const openDrawer=grid.querySelector('details[open]')?.dataset.drawer;
