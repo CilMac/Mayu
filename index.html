@@ -22,18 +22,47 @@ header{max-width:880px;padding:12px 26px}.brand{font-size:12px}.lang button{padd
 main{max-width:780px;padding:0 26px 22px}.drawing{width:150px;height:60px;margin:0 auto 4px}.eyebrow{font-size:9px;margin:6px 0 12px}h1{font-size:54px;line-height:1.18;margin-bottom:7px}.birthday{font-size:20px;margin-bottom:14px}.rule{margin-bottom:13px;width:28px}.intro{font-size:14px;line-height:1.7}.open{margin-top:12px;padding:10px 20px;font-size:13px;gap:10px}.open svg{width:19px;height:17px}
 .collection{margin:26px auto 0;padding-top:19px}.collection>.eyebrow{display:none}.collection h2{font-size:23px;line-height:1.4;margin-bottom:6px}.collection-hint{font-size:12px;line-height:1.6;margin-bottom:15px}.gift-drawers{display:block;text-align:left}.gift-drawer{border-top:1px solid var(--line)}.gift-drawer:last-child{border-bottom:1px solid var(--line)}.drawer-summary{display:flex;align-items:center;gap:14px;list-style:none;cursor:pointer;padding:11px 8px;min-height:56px}.drawer-summary::-webkit-details-marker{display:none}.drawer-summary:focus-visible{outline:2px solid var(--olive);outline-offset:2px}.drawer-mark{width:33px;height:33px;border-radius:50%;display:grid;place-items:center;background:var(--drawer-color);color:var(--olive);font-size:18px;flex-shrink:0}.drawer-label{flex:1;font-size:17px;line-height:1.45}.drawer-count{font:11px system-ui,sans-serif;color:var(--muted);margin-left:8px}.drawer-toggle{position:relative;width:14px;height:14px;margin:0 6px}.drawer-toggle:before,.drawer-toggle:after{content:"";position:absolute;top:6px;width:13px;height:1px;background:var(--olive);transition:transform .2s}.drawer-toggle:after{transform:rotate(90deg)}.gift-drawer[open] .drawer-toggle:after{transform:rotate(0)}.gift-drawer[open] .drawer-summary{padding-bottom:12px}.drawer-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;padding:2px 8px 20px}.drawer-grid .gift-card:last-child{grid-column:auto;width:auto;justify-self:stretch}.drawer-grid .gift-art{aspect-ratio:1.6}.drawer-grid .gift-art svg{width:72%;height:90%}.drawer-grid .gift-name{font-size:14px;line-height:1.5;padding:9px 0 0}.drawer-grid .gift-origin{display:none}.drawer-grid .gift-number{font-size:10px;left:10px;top:9px}.drawer-grid .gift-plus{font-size:20px;right:9px;bottom:5px}.drawer-grid.single{grid-template-columns:minmax(0,220px);justify-content:center}.foot{margin:16px 0 0;font-size:10px}.foot span{margin-top:6px;font-size:9px}
 @media(max-width:480px){header{padding:12px 18px}main{padding:0 18px 18px}.drawing{height:58px;width:120px}h1{font-size:49px}.birthday{font-size:18px;margin-bottom:12px}.intro{font-size:13px}.eyebrow{font-size:8px;letter-spacing:.22em;margin:4px 0 10px}.collection{margin-top:22px;padding-top:17px}.collection h2{font-size:21px}.collection-hint{font-size:11px}.drawer-summary{padding:13px 3px;gap:10px;min-height:62px}.drawer-label{font-size:16px}.drawer-grid{gap:11px;padding:0 3px 17px}.drawer-grid .gift-art{aspect-ratio:1.05}.drawer-grid .gift-name{font-size:12px;line-height:1.5}.drawer-grid .gift-number{font-size:8px;left:6px;top:5px}.drawer-grid .gift-plus{font-size:17px;right:5px}.drawer-grid.single{grid-template-columns:minmax(0,150px)}.foot{margin-top:19px}}
+
+/* Carnet de Provence: warm paper, a sketched mas and Moustiers-blue details. */
+:root{--paper:#faf5e9;--ink:#35483d;--olive:#6b785b;--line:#d7d7c4;--muted:#727565;--blue:#718e9e}
+body{background:radial-gradient(ellipse at 12% 20%,#e8dcc140,transparent 44%),radial-gradient(ellipse at 92% 65%,#dde3d136,transparent 42%),var(--paper)}
+body:before{opacity:.2;z-index:0}header,main{position:relative}header{max-width:900px;padding:22px 30px 6px}.brand{letter-spacing:.24em;font-size:11px}.brand:before{content:'✧';color:var(--blue);margin-right:10px;font-size:18px}.lang{background:#fffaf154;border-color:#d4d8ca}.lang button{min-height:36px}.lang button[aria-pressed=true]{background:#53654f}
+main{max-width:800px;padding:0 32px 30px}.drawing{width:min(510px,100%);height:auto;aspect-ratio:510/162;margin:2px auto 10px;overflow:visible}.eyebrow{font-size:10px;letter-spacing:.21em;margin:8px 0 16px}h1{font-size:68px;line-height:1.15;margin-bottom:12px}.birthday{font-size:23px;margin-bottom:19px}.rule{width:52px;background:#aab7a0;margin-bottom:17px}.intro{font-size:15px;line-height:1.85}.open{background:#fffbf1a6;border-color:#a8b39b;border-radius:4px;padding:12px 22px;margin-top:19px;box-shadow:0 3px 10px #74744708}.open:hover{background:#ececda;transform:translateY(-2px)}
+.collection{position:relative;border-top:0;margin-top:32px;padding:28px 24px 10px;background:#fffcf36b;box-shadow:0 8px 34px #77715d08;border-radius:3px}.collection:before,.collection:after{content:'';position:absolute;left:0;right:0;height:5px;background:radial-gradient(circle at 50% 50%,#8199a9 1px,transparent 1.6px) 0 0/15px 5px;opacity:.6}.collection:before{top:0}.collection:after{bottom:0}.collection h2{font-size:24px;margin-bottom:8px}.collection-hint{font-size:13px;margin-bottom:22px}.gift-drawer{border-color:#d9ddd0}.gift-drawer:last-child{border-bottom:0}.drawer-summary{padding:15px 4px;min-height:70px;gap:15px}.drawer-label{font-size:18px}.drawer-mark{background:transparent!important;border:1px solid #a9bcc1;border-radius:7px 10px 7px 10px;color:#6a8a9b;width:36px;height:36px;position:relative}.drawer-mark:after{content:'';position:absolute;inset:3px;border:1px dotted #a9bcc1;border-radius:5px;pointer-events:none}.drawer-count{color:#7a806f}.drawer-toggle:before,.drawer-toggle:after{background:#738b91}.gift-drawer[open] .drawer-summary{padding-bottom:16px}.drawer-grid{padding-bottom:24px}.gift-art{border-radius:3px}.gift-name{color:#40513f}.gift-card:focus-visible{outline:2px solid var(--blue);outline-offset:5px}.gift-card:hover .gift-name{text-decoration:underline;text-underline-offset:4px}.landscape-foot{display:block;width:100%;height:auto;margin:26px auto 0;opacity:.85}.foot{margin:12px 0 0;font-size:11px;color:#6a775e}.foot span{font-size:10px;margin-top:8px}dialog{border-color:#b7c5c3;border-radius:5px;background:#faf5e9}dialog:before{content:'✧';position:absolute;top:18px;left:25px;color:var(--blue);font-size:22px}.tiny{color:var(--blue)}
+@media(min-width:1000px){main:before,main:after{content:'✧';position:absolute;top:340px;color:#a6b5b6;font-size:32px;opacity:.6}main:before{left:-60px}main:after{right:-60px;top:480px;font-size:23px}}
+@media(max-width:480px){header{padding:15px 18px 5px}main{padding:0 18px 24px}.drawing{margin:8px auto 14px}.eyebrow{font-size:9px;letter-spacing:.16em;margin-bottom:14px}h1{font-size:57px}.birthday{font-size:20px;margin-bottom:17px}.intro{font-size:14px}.open{margin-top:17px;font-size:13px;min-height:44px}.collection{margin-top:28px;padding:24px 12px 8px}.collection h2{font-size:20px}.collection-hint{font-size:12px;margin-bottom:16px}.drawer-summary{gap:10px;padding:14px 0;min-height:70px}.drawer-label{font-size:16px}.drawer-count{margin-left:0}.drawer-mark{width:32px;height:32px}.drawer-grid{gap:10px;padding:0 0 20px}.drawer-grid .gift-name{font-size:12px}.landscape-foot{margin-top:24px}.foot{margin-top:12px}}
+
 </style>
 </head>
 <body>
 <header><span class="brand">PROVENCE</span><nav class="lang" aria-label="Language"><button type="button" data-lang="ja" aria-pressed="true">日本語</button><button type="button" data-lang="fr" aria-pressed="false">Français</button></nav></header>
 <main>
-<svg class="drawing" viewBox="0 0 330 200" fill="none" aria-hidden="true">
-<circle cx="219" cy="66" r="39" fill="#ead6a0" opacity=".65"/>
-<path d="M47 172c59-10 67-75 111-97 30-15 66-9 105-34" stroke="#7b866b" stroke-width="1.4"/>
-<path d="M88 148c-25 4-39-7-43-23 23-4 40 4 43 23Zm15-19c-6-23 2-41 18-48 9 21 0 40-18 48Zm18-27c-23 0-34-13-34-29 22 0 36 13 34 29Zm24-20c-3-22 8-38 23-40 5 21-5 36-23 40Zm20-9c-10-18-7-33 6-43 12 18 9 33-6 43Zm23-5c8-21 22-28 38-23-9 19-24 27-38 23Zm30-8c4-20 17-31 34-28-5 20-17 30-34 28Z" fill="#a5af91"/>
-<path d="M93 139c-1-13-6-19-14-23M130 94c5-16 6-25 3-34M177 70c5-15 13-25 23-29" stroke="#7b866b" stroke-width="1.2"/>
-<ellipse cx="135" cy="95" rx="5" ry="8" transform="rotate(23 135 95)" fill="#637353"/><ellipse cx="194" cy="77" rx="5" ry="8" transform="rotate(40 194 77)" fill="#637353"/>
-<path d="M162 170h94M180 180h49" stroke="#d4d8c8" stroke-linecap="round"/>
+<svg class="drawing" viewBox="0 0 510 162" fill="none" aria-hidden="true">
+<defs>
+ <linearGradient id="hill-wash" x2="0" y2="1"><stop stop-color="#b9bdaf" stop-opacity=".52"/><stop offset="1" stop-color="#e5dfc6" stop-opacity=".14"/></linearGradient>
+ <radialGradient id="sun-wash"><stop stop-color="#edd29a" stop-opacity=".8"/><stop offset="1" stop-color="#edd29a" stop-opacity=".22"/></radialGradient>
+ <filter id="paper-edge" x="-5%" y="-10%" width="110%" height="120%"><feTurbulence type="fractalNoise" baseFrequency=".045" numOctaves="3" seed="8" result="grain"/><feDisplacementMap in="SourceGraphic" in2="grain" scale="1.4"/></filter>
+</defs>
+<g filter="url(#paper-edge)">
+ <circle cx="365" cy="51" r="31" fill="url(#sun-wash)"/>
+ <path d="M20 129Q75 74 125 106T229 98Q295 63 361 99T490 116L488 151H20Z" fill="url(#hill-wash)"/>
+ <path d="M25 138Q108 109 178 130T305 127Q392 99 487 140" stroke="#a8b096" stroke-width="1.3" opacity=".65"/>
+ <path d="M110 137Q178 119 242 135T400 135" stroke="#c0b38b" stroke-width="7" opacity=".2"/>
+ <path d="M219 133V78L274 67 304 83V134Z" fill="#e9d8b8" stroke="#ad9c7d" stroke-width=".8"/>
+ <path d="M210 80 271 55 313 80 302 86 272 68 219 86Z" fill="#be8d73"/>
+ <path d="m216 79 56-20 34 21m-78-4 45-15 23 14" stroke="#a87962" stroke-width=".7" opacity=".65"/>
+ <path d="M261 132v-21q7-11 14 0v21" fill="#9d9c7e"/>
+ <path d="M234 92h12v15h-12zm45-3h12v15h-12" fill="#839a94"/>
+ <path d="M230 92h4v15h-4m16-15h4v15h-4m29-18h4v15h-4m16-15h4v15h-4" fill="#a4b2a0"/>
+ <path d="M287 66V52h7v18" fill="#ccb799"/>
+ <path d="M181 136c-11-20-7-44-1-75 8 25 17 55 7 75Z" fill="#7f9273"/>
+ <path d="M198 134c-9-20-5-58 3-88 7 32 13 65 4 88Z" fill="#647f64" opacity=".88"/>
+ <path d="m184 91 1 44m17-69-1 68" stroke="#697b56" stroke-width=".8"/>
+ <path d="M313 135q15-21 32-3m-207 5q15-18 29-2m198-2q14-15 26 1" stroke="#a3ad86" stroke-width="10" stroke-linecap="round" opacity=".5"/>
+</g>
+<path d="M155 146q98-5 197 0" stroke="#b3b79d" stroke-width=".7"/>
+<path d="m70 60 5-4 5 4m2-9 4-3 5 3" stroke="#8a9b99" stroke-width="1" stroke-linecap="round"/>
+<path d="m420 96 3-7 3 7 7 3-7 3-3 7-3-7-7-3Z" stroke="#87a1ae" stroke-width=".8"/>
 </svg>
 <p class="eyebrow" data-i18n="eyebrow">プロヴァンスから、あなたへ</p>
 <h1>まゆ</h1>
@@ -47,6 +76,13 @@ main{max-width:780px;padding:0 26px 22px}.drawing{width:150px;height:60px;margin
 <p class="collection-hint" id="collection-hint">三つの引き出しに、七つの贈りもの。</p>
 <div class="gift-drawers" id="gift-grid"></div>
 </section>
+<svg class="landscape-foot" viewBox="0 0 730 85" fill="none" aria-hidden="true">
+ <path d="M0 61Q90 20 180 48T365 43Q460 9 552 42T730 44V85H0Z" fill="#d4d8c8" opacity=".48"/>
+ <path d="M0 75Q132 42 244 65T468 60Q602 36 730 69V85H0Z" fill="#c5cda8" opacity=".4"/>
+ <path d="M38 78Q193 45 328 73m59 5q141-33 291-3" stroke="#b7bd98" stroke-width="1" opacity=".7"/>
+ <path d="M585 55c-5-10-3-26 1-44 5 16 9 33 4 44m10 3c-4-9-3-21 1-35 4 13 8 26 4 35" fill="#7f9472" opacity=".65"/>
+ <path d="m353 21 4-8 4 8 8 4-8 4-4 8-4-8-8-4Z" stroke="#849eaa" stroke-width="1"/>
+</svg>
 <p class="foot">Provence · Japon<span data-i18n="footer">心をこめて</span></p>
 </main>
 <dialog id="letter" aria-labelledby="letter-title"><button type="button" class="close" id="close" aria-label="閉じる">×</button><div class="tiny" aria-hidden="true">✳</div><h2 id="letter-title" data-i18n="title">プロヴァンスのひとかけら</h2><p data-i18n="letter">この小包に、プロヴァンスの風を少しだけ。
